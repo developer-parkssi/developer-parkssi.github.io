@@ -1,13 +1,13 @@
 ---
-title: "[포스팅 예시] 이곳에 제목을 입력하세요"
+title: "문서1"
 excerpt: "본문의 주요 내용을 여기에 입력하세요"
 
 categories:
-  - Categories1
+  - troubleshooting/elasticsearch
 tags:
   - [tag1, tag2]
 
-permalink: /categories1/post-name-here/
+permalink: /categories1/post-name-here-1/
 
 toc: true
 toc_sticky: true

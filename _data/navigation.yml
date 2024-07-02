@@ -7,16 +7,25 @@ main:
     url: /about/
 
   - title: "GitHub"
-    url: https://github.com/JJuniJJuni
+    url: https://github.com/JJuniJJuni/
 
-  # - title: "Projects"
-  #   url: /projects/
 
-  # - title: "Categories"
-  #   url: /categories/
-
-# sidebar navigation (categories)
-# 2022.02.15 sidebar update : simple ver.
 categories:
-  - title: "Trouble Shooting"
-    url: /categories/troubleshooting/
+  - title: "dassd"
+    children:
+      - title: "Categories1"
+        url: /categories/categories1/
+      - title: "Categories2"
+        url: /categories/categories2/
+
+  - title: "dsadsa"
+    children:
+      - title: "Categories5"
+        url: /categories/categories5/
+      - title: "Categories6"
+        url: /categories/categories6/
+
+  - title: "Tdsadasitle3"
+    children:
+      - title: "Categories7"
+        url: /categories/categories7/
