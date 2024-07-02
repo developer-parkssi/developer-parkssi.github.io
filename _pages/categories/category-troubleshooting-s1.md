@@ -1,7 +1,7 @@
 ---
 title: "Spring"
 layout: category
-permalink: "/categories/troubleshooting/spring"
+permalink: /categories/troubleshooting/s1
 author_profile: true
 taxonomy: "Spring"
 sidebar:

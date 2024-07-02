@@ -1,4 +1,3 @@
-# main links
 main:
   - title: "Home"
     url: https://jjunijjuni.github.io/dev_docs/
@@ -9,23 +8,14 @@ main:
   - title: "GitHub"
     url: https://github.com/JJuniJJuni/
 
-
 categories:
-  - title: "dassd"
+  - title: "Trouble Shooting"
     children:
-      - title: "Categories1"
-        url: /categories/categories1/
-      - title: "Categories2"
-        url: /categories/categories2/
-
-  - title: "dsadsa"
+      - title: "Elasticsearch"
+        url: /categories/troubleshooting/es1/
+      - title: "Spring"
+        url: /categories/troubleshooting/spring/
+  - title: "dev"
     children:
-      - title: "Categories5"
-        url: /categories/categories5/
-      - title: "Categories6"
-        url: /categories/categories6/
-
-  - title: "Tdsadasitle3"
-    children:
-      - title: "Categories7"
-        url: /categories/categories7/
+      - title: "Elasticsearch"
+        url: /categories/dev/es2/
