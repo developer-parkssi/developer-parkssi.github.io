@@ -10,12 +10,8 @@ main:
 
 categories:
   - title: "Trouble Shooting"
+    url: /categories/troubleshooting/
+  - title: "DEV"
     children:
       - title: "Elasticsearch"
-        url: /categories/troubleshooting/es1/
-      - title: "Spring"
-        url: /categories/troubleshooting/spring/
-  - title: "dev"
-    children:
-      - title: "Elasticsearch"
-        url: /categories/dev/es2/
+        url: /categories/dev/elasticsearch/
