@@ -1,7 +1,7 @@
 ---
 title: "Trouble Shooting"
 layout: category
-permalink: /categories/troubleshooting
+permalink: /categories/troubleshooting/
 author_profile: true
 taxonomy: "Trouble Shooting"
 sidebar:

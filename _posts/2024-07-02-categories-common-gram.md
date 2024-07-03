@@ -1,6 +1,6 @@
 ---
-title: "ES Common Gram"
-excerpt: "언어 구별로 색인"
+title: "ES Custom analyzer, Common Gram"
+excerpt: "개별 토큰으로 분리하는걸 묶어서 처리하고 싶을 때"
 
 categories:
   - "Trouble Shooting"
