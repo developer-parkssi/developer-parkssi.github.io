@@ -5,7 +5,7 @@ excerpt: "개별 토큰으로 분리하는걸 묶어서 처리하고 싶을 때"
 categories:
   - "Trouble Shooting"
 tags:
-  - [Elasticsearch]
+  - ['Elasticsearch']
 
 permalink: /categories/troubleshooting/common-gram
 
@@ -13,13 +13,13 @@ toc: true
 toc_sticky: true
 
 date: 2024-07-02
-last_modified_at: 2024-07-03
+last_modified_at: 2024-07-16
 ---
 
 
 # Problem
 ## 분석기 이슈
-- 특수문자를 분리 하려다가 실수형에 '.'이 붙어있으면 분리되는 이슈가 발생했다
+- 특수문자를 분리 하려다가 실수형에 '.'이 붙어있으면 분리되는 이슈가 발생했다   
 ```python
 ex) 3.5kg => 3, ., 5, kg
 ```

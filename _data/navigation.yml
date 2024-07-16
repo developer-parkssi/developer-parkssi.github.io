@@ -17,3 +17,5 @@ categories:
         url: /categories/dev/elasticsearch/
       - title: "Kotlin"
         url: /categories/dev/kotlin/
+      - title: "LLM"
+        url: /categories/dev/llm/

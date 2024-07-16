@@ -5,7 +5,7 @@ excerpt: "Coroutine 하나 때문에 Kotlin 전환하는 건에 대하여.."
 categories:
   - "Kotlin"
 tags:
-  - [Kotlin]
+  - ['Kotlin']
 
 permalink: /categories/dev/kotlin/coroutine
 
@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2024-07-08
-last_modified_at: 2024-07-10
+last_modified_at: 2024-07-16
 ---
 
 # 코루틴 하나만으로 코틀린?
