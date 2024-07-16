@@ -21,7 +21,7 @@ last_modified_at: 2024-07-10
 - 내가 맡은 프로젝트는 여러 API를 묶어서 리턴해주는 Aggregation 책임이 많아서 비동기 처리할 일이 많았다
 - Restful API를 개발할 때 동시성 프로그래밍이 필요하면 이와 같이 구현했다
 
-```
+```java
 public String processA () {
   System.out.println("작업A");
   return "작업A";
@@ -52,7 +52,7 @@ combinedFuture.get();
 - 물론 학습하고, 개발하다보면 익숙해지는데 러닝커브가 높은 방식은 입문하기가 어려운 사실
 - 하지만 우리의 킹틀린은 그렇지 않다..!
 
-```
+```kotlin
 suspend fun processA(): String {
   System.out.println("작업A");
   return "작업A";
@@ -88,7 +88,7 @@ runBlocking {
 - co-routine이라는 말답게 코루틴 블럭 내부에 suspend를 만나면 밖으로 오고갈 수 있다
 - 예를 들어서 아래와 같이 `processAll` 함수에 들어가서 `processA` 함수가 끝날 때까지 기다리는게 아니라 `processAll` 함수밖으로 나와 다른 코드를 실행하다 와도 된다는 것
 
-```
+```kotlin
 fun processAll() {
   startCoroutine {
     processA()
@@ -110,7 +110,7 @@ suspend fun processB() {
 - 위의 협력형 멀티 태스킹으로 '동시성 프로그래밍' 구현이 가능하다
 - 각각의 코루틴이 suspend를 만날 때마다 번갈아가면서 실행이 가능하기 때문이다
 
-```
+```python
 Time -->
 Coroutine A: |-----|     |-----|     |-----|
 Coroutine B:     |-----|     |-----|     |-----|
@@ -120,7 +120,7 @@ Coroutine B:     |-----|     |-----|     |-----|
 - 사실 내가 코루틴을 사용하려는 가장 큰 이유다
 - `suspend` 키워드만 달아주면 비동기 함수를 정말 편하게 만들 수 있다
 
-```
+```kotlin
 suspend fun processA() {
   taskA()
   taskB()
