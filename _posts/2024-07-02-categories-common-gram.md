@@ -4,6 +4,7 @@ excerpt: "개별 토큰으로 분리하는걸 묶어서 처리하고 싶을 때"
 
 categories:
   - "Trouble Shooting"
+  - 'Elasticsearch'
 tags:
   - ['Elasticsearch']
 
@@ -13,7 +14,7 @@ toc: true
 toc_sticky: true
 
 date: 2024-07-02
-last_modified_at: 2024-07-16
+last_modified_at: 2024-07-23
 ---
 
 
