@@ -19,3 +19,5 @@ categories:
         url: /categories/dev/kotlin/
       - title: "LLM"
         url: /categories/dev/llm/
+      - title: "WEB"
+        url: /categories/dev/web/
