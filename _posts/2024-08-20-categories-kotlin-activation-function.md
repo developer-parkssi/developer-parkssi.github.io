@@ -187,8 +187,69 @@ fun main() {
 
 - apply와 마찬가지로 수신객체 자신을 반환
 - 프로퍼티 세팅 뿐만아니라 객체에 대한 추가적인 작업(로깅, 유효성 검사 등)을 한 후 객체를 반환할 때 사용
-- 다식의 입력 파라미터로 also의 수신객체(T)를 지정하기 때문에 내부에서 수신객체를 사용하기 위해서는 it을 사용
+- 람다식의 입력 파라미터로 also의 수신객체(T)를 지정하기 때문에 내부에서 수신객체를 사용하기 위해서는 it을 사용
 
 ```kotlin
 public inline fun <T> T.also(block: (T) -> Unit): T
 ```
+
+- count를 반환받는 함수를 만든 후 해당 count의 숫자를 올리고 싶을 때 다음과 같이 count을 return한 다음 count의 값
+
+```kotlin
+var count = 3
+
+fun getAndIncreaseCount() = count.also {
+  count++
+}
+
+fun main() {
+  println("first count ${getAndIncreaseCount()}")
+  println("second count ${getAndIncreaseCount()}")
+}
+
+[output]
+first count 3
+second count 4
+```
+
+- 주의할 점은 객체를 사용할 때는 객체의 주소값을 return 하는 것이기 때문에 객체의 프로퍼티가 바뀌면 also에서 return하는 객체의 프로퍼티 또한 바뀐다는 점
+- 객체의 프로퍼티를 다음과 같이 바꾸어 버릴 경우 바뀐 프로퍼티가 객체의 값이 되버린다
+
+```kotlin
+var employee = Employee("James", "Junior", 29)
+
+fun getAndIncreaseAge() = employee.also {
+    employee.age = it.age + 1
+}
+
+fun main() {
+    println("employee ${getAndIncreaseAge()}")
+    println("employee ${getAndIncreaseAge()}")
+}
+
+[output]
+employee Employee(name="James", rank="Junior", age=30)
+employee Employee(name="James", rank="Junior", age=31)
+```
+
+- 보통 객체에 대해 같은 용도로 사용하고자 할 때에는 copy를 사용
+- 바뀌지 않은 객체가 return됨을 보장 가능
+
+```kotlin
+var employee = Employee("James", "Junior", 29);
+
+fun getAndIncreaseAge() = employee.also {
+  employee = employee.copy(age = it.age + 1)
+}
+
+fun main() {
+    println("employee ${getAndIncreaseAge()}")
+    println("employee ${getAndIncreaseAge()}")
+}
+
+[output]
+employee Employee(name="James", rank="Junior", age=29)
+employee Employee(name="James", rank="Junior", age=30)
+```
+
+- 이러한 문제 때문에 also는 거의 사용되지 않고, 사용할 때는 프로퍼티를 바꾸지 않고 동작을 추가적으로 해야하는 경우(로깅 등)에서만 가끔 사용
