@@ -28,7 +28,10 @@ last_modified_at: 2024-08-28
 (process_files_open_files/ process_files_max_files) * 100
 ```
 
-- 위에서 process_files_max_files를 넉넉히 65000개 정도로 설정했는데, 30%라면 최소한 현재 열려있는 파일 개수가 18000개 정도는 돼야한다
+- `process open files`란 프로세스가 작업을 하는데 열어놓은 파일의 수   
+  ex) f.write, f.read일 때 사용하는 파일
+- 과도하게 열고 닫거나, 열고서 안 닫으면 무한정으로 수가 늘어나 최대치에 이르렀을 때 서비스가 내려가버린다
+- 위에서 process_files_max_files를 넉넉히 65000개 정도로 설정했는데, 30%라면 최소한 현재 열려있는 파일 개수가 18000개 정도는 돼야한다-
 - 이 정도면 서비스 셧다운이 될 정도의 수치... 뭔가 이상하다...
 
 # 잘못된 설정값
