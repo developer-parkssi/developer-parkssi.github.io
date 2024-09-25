@@ -24,7 +24,7 @@ last_modified_at: 2024-09-25
 
 **Eureka Server 마다 등록이 되어있는 instance가 다르다...**
 
-![img.png](/assets/images/posts_img/troubleshooting/eureka-instance-registration/img.png)
+![img](/assets/images/posts_img/troubleshooting/eureka-instance-registration/img.png)
 
 # Cause
 
@@ -59,7 +59,7 @@ eureka.client.register-with-eureka=false
 
 - 설정을 추가하고 배포해보니 client instance 전부 잘 등록된걸 확인했다
 
-![img2.png](/assets/images/posts_img/troubleshooting/eureka-instance-registration/img2.png)
+![img2](/assets/images/posts_img/troubleshooting/eureka-instance-registration/img2.png)
 
 # 결론
 
