@@ -1,12 +1,12 @@
 main:
   - title: "Home"
-    url: https://jjunijjuni.github.io/
+    url: https://developer-parkssi.github.io/
 
   - title: "About"
     url: /about/
 
   - title: "GitHub"
-    url: https://github.com/JJuniJJuni/
+    url: https://github.com/developer-parkssi/
 
 categories:
   - title: "Trouble Shooting"

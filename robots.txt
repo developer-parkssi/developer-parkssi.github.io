@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jjunijjuni.github.io/sitemap.xml
+Sitemap: https://developer-parkssi.github.io/sitemap.xml
