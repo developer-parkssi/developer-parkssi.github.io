@@ -24,7 +24,7 @@ title_separator: "&#124;"
 subtitle: ""
 name: "developer-parkssi" # 블로그 닉네임 설정
 description: "개발하면서 필요할 때 적을 것들입니다" # 블로그 설명
-url: "https://developer-parkssi" # 블로그 URL
+url: "https://developer-parkssi.github.io" # 블로그 URL
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: "developer-parkssi/developer-parkssi.github.io" # GitHub Repo 이름
 teaser: #
