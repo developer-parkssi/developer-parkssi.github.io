@@ -11,6 +11,8 @@ main:
 categories:
   - title: "Trouble Shooting"
     url: /categories/troubleshooting/
+  - title: "Study"
+    url: /categories/study/
   - title: "DEV"
     children:
       - title: "Elasticsearch"
@@ -21,5 +23,4 @@ categories:
         url: /categories/dev/llm/
       - title: "WEB"
         url: /categories/dev/web/
-  - title: "Study"
-    url: /categories/study/
+
