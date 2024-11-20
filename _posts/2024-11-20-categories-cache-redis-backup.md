@@ -54,6 +54,7 @@ save 60 10000
 
 # 스냅샷 Backup 파일 이름
 dbfilename dump.rdb
+
 # 스냅샷 Backup 파일 저장 경로
 # 기존에는 'dir ./'로 되어있다
 dir /data01/sw/redis/redis-5.0.5/data
