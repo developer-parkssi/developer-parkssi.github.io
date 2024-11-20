@@ -20,7 +20,7 @@ last_modified_at: 2024-11-20
 
 ## Problem
 
-- 기존에 운영하던 Redis Cluter 구조는 다음과 같다
+- 기존에 운영하던 Redis Cluster 구조는 다음과 같다
 
 ```shell
 Master - Slave
