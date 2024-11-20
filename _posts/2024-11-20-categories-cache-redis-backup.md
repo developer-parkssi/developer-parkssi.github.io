@@ -125,13 +125,19 @@ repl_backlog_histlen:1048576
 
 ```shell
 127.0.0.1:6379> cluster failover
+
+# 진행 순서
+Master A ON - Slave B ON
+Master B ON - Slave A ON     <- failover
+Master B ON   SLAVE A OFF    <- 'A' 재실행
+Master A ON - Slave B ON     <- failover
 ```
 
 ## Backup 재실행 시 유의사항
 
 - Backup 데이터인 `dump.rdb`만 필요하면 된다고 생각했는데 이것만 있으면 Node가 기존 Cluster 관계 참조를 못한다
-- Redis는 설정 파일 `dir 경로` 값 경로에 `dump.rdb`뿐만 아니라 `node-6379.conf`도 저장한다
-- `node-6379.conf`를 실제로 열어보면 Cluster 구조가 나와있다
+- Redis는 설정 파일 `dir 경로` 값 경로에 `dump.rdb`뿐만 아니라 Cluster 구조가 들어간 `node-6379.conf`도 저장한다
+- 실제로 `node-6379.conf`를 열어보면 Cluster 구조가 나와있다
 
 ```shell
 
@@ -150,10 +156,12 @@ vars currentEpoch 12 lastVoteEpoch 0
 # 결론
 
 ## 기존에 Backup 적용이 안 된 이유
+
 - 기본으로 설정되어있는 RDB 적용이 왜 안되는지 알게됐다
 - 백업 경로 주소가 Default `dir ./` 상대 경로로 되어있어서, 명령어를 실행한 시점 그 경로에 파일이 저장된다
 - 절대 경로가 아니기 때문에 그때마다 달라지는 것
 
 ## 무중단 운영 가능
+
 - 이제 기존 데이터와 Cluster 구조를 유지가능 하기 때문에 무중단 운영이 가능할 것 같다
 - Redis 작업 할 때마다 벌벌 떨었는데 이젠 안 그래도 되어서 기분 좋다
