@@ -19,7 +19,7 @@ minimal_mistakes_skin: "plum" # "default" "air", "aqua", ...
 
 # Site Settings
 locale: "ko-KR" #"en-US"
-title: "DevLog" # 상단 헤더에 보이는 블로그 명
+title: "Tech Blog" # 상단 헤더에 보이는 블로그 명
 title_separator: "&#124;"
 subtitle: ""
 name: "developer-parkssi" # 블로그 닉네임 설정
@@ -98,7 +98,7 @@ analytics:
 
 # Site Author
 author:
-  name: "JJUNI~" # 블로그 닉네임
+  name: "Parkssi DevLog" # 블로그 닉네임
   avatar: "/assets/images/meee.png" # 블로그 프로필 사진
   #   bio              : "hi all!"
   # location         : "Seoul, Korea"
