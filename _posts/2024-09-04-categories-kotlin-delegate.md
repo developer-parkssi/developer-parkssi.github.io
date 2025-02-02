@@ -55,7 +55,7 @@ class Tesla : ElectronicCar {
 }
 
 fun main(){
-  val user = User(ElectronicCar())
+  val user = User(Tesla())
   user.info()
 }
 ```
