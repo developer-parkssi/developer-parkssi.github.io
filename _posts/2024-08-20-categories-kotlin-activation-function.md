@@ -1,5 +1,5 @@
 ---
-title: "활성화 함수(Activation Function)란?"
+title: "범위 지정 함수란?"
 excerpt: "apply, with, let, also, run, ..."
 
 categories:
@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2024-08-20
-last_modified_at: 2024-08-20
+last_modified_at: 2025-03-27
 ---
 
 # 범위 함수란?
