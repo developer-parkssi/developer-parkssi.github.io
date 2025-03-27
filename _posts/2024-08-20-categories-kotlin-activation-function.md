@@ -7,7 +7,7 @@ categories:
 tags:
   - ['Kotlin']
 
-permalink: /categories/dev/kotlin/coroutine
+permalink: /categories/dev/kotlin/range-function
 
 toc: true
 toc_sticky: true

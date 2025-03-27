@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2024-09-04
-last_modified_at: 2024-09-04
+last_modified_at: 2025-03-27
 ---
 
 # Delegate Pattern이란?
@@ -68,7 +68,7 @@ fun main(){
 - 'by' 키워드로 한번에 해결
 
 ```kotlin
-class User(private val electronicCar: ElectronicCar) : electronicCar by ElectronicCar
+class User(private val electronicCar: ElectronicCar) : ElectronicCar by electronicCar
 ```
 
 # 결론
